@@ -16,7 +16,7 @@ initiate_db(4,'Виноград', 'очень сладкий', 'vin.jpg', 400)
 
 a = get_all_products()  # чтение содержимого БД
 
-api = '8022767311:AAGPwqgFoP0gUistLliI7WsW6ApCQ6nU56c'  # переменная API-адреса
+api = ''  # переменная API-адреса
 
 bot = Bot(token=api)  # переменная бота
 
