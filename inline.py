@@ -6,16 +6,13 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import asyncio
 
-# prs = {'Патроны': 1000, 'Клубника': 'str.jpg', 'Яблоки': 'apl.jpg', 'Лимоны': 'lim.jpg',
-#       'Виноград': 'vin.jpg'}  # склад )))
-
 prs = {'Патроны': 1000, 'Клубника': ['str.jpg', 'под шампанское'], 'Яблоки': ['apl.jpg', 'богаты железом'],
        'Лимоны': ['lim.jpg', 'с витамином С'],
        'Виноград': ['vin.jpg', 'слааадкий']}  # склад )))
 prs_key = list(prs.keys())  # список продуктов
 prs_val = list(prs.values())  # список изображений продуктов
 
-api = '8022767311:AAGPwqgFoP0gUistLliI7WsW6ApCQ6nU56c'  # переменная API-адреса
+api = ''  # переменная API-адреса
 
 bot = Bot(token=api)  # переменная бота
 
