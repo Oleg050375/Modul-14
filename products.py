@@ -16,7 +16,7 @@ initiate_db(4,'Виноград', 'очень сладкий', 'vin.jpg', 400)
 
 a = get_all_products()  # чтение содержимого БД
 
-api = ''  # переменная API-адреса
+api = '8022767311:AAGPwqgFoP0gUistLliI7WsW6ApCQ6nU56c'  # переменная API-адреса
 
 bot = Bot(token=api)  # переменная бота
 
@@ -124,8 +124,6 @@ async def send_calories(message, state):
     await message.answer(f'Ваша норма калорий {str(norma)}')  # вывод результата расчёта
     await state.finish()
 
-
-connection.commit()  # сохранение изменений в БД
 
 connection.close()  # закрытие соединения с БД
 
